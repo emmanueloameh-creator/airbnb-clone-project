@@ -61,4 +61,49 @@ This project involves multiple roles, each responsible for different parts of th
 ---
 
 These roles above ensure that each part of the Airbnb Clone Project — from design and development to testing and deployment — runs efficiently and meets the overall goal of delivering a scalable, secure, and user-friendly web application.
+
+
+## 💻 Technology Stack
+
+The Airbnb Clone Project uses a modern and scalable technology stack that supports both frontend and backend development, ensuring high performance, flexibility, and maintainability.
+
+### 1. React (Frontend)
+- **Purpose:** A powerful JavaScript library for building dynamic and responsive user interfaces.  
+- **Why:** React enables fast rendering, reusable components, and seamless integration with APIs.
+
+### 2. Tailwind CSS (Styling)
+- **Purpose:** A utility-first CSS framework used to style and design the frontend.  
+- **Why:** It speeds up UI development with pre-built classes and ensures a clean, modern look.
+
+### 3. Node.js (Runtime Environment)
+- **Purpose:** A JavaScript runtime for executing server-side code.  
+- **Why:** It allows developers to use the same language (JavaScript) for both frontend and backend, improving development efficiency.
+
+### 4. Express.js (Backend Framework)
+- **Purpose:** A minimal and flexible Node.js framework for building RESTful APIs.  
+- **Why:** Simplifies the creation of API routes, middleware, and server configurations.
+
+### 5. PostgreSQL (Database)
+- **Purpose:** A powerful open-source relational database system for managing application data.  
+- **Why:** Provides reliability, scalability, and robust data security for user and booking data.
+
+### 6. JSON Web Tokens (JWT) (Authentication)
+- **Purpose:** A secure way to transmit and verify user authentication information.  
+- **Why:** Helps implement user login, signup, and session management in a stateless manner.
+
+### 7. Git & GitHub (Version Control)
+- **Purpose:** Tools for tracking changes in the codebase and collaborating with other developers.  
+- **Why:** Ensures proper version management, teamwork, and backup of project files.
+
+### 8. Vercel / Netlify (Frontend Deployment)
+- **Purpose:** Platforms for deploying and hosting the React frontend.  
+- **Why:** Offer easy CI/CD pipelines and global content delivery for fast site performance.
+
+### 9. Railway / Render / Heroku (Backend Deployment)
+- **Purpose:** Cloud hosting platforms for deploying Node.js/Express applications.  
+- **Why:** Allow scalable backend hosting with database integrations and automated deployment.
+
+---
+
+This technology stack ensures the Airbnb Clone Project is efficient, secure, and easy to maintain, while providing users with a seamless booking experience across devices.
   
