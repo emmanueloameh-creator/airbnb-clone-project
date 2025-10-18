@@ -14,6 +14,7 @@ A simplified Airbnb-style clone built for learning and portfolio purposes.
 - **Auth:** JSON Web Tokens (JWT) / OAuth for third-party sign-ins  
 - **Deployment:** Vercel / Netlify (frontend), Railway / Render / Heroku (backend)
 
+
 ## 🧑‍🤝‍🧑 Team Roles
 
 This project involves multiple roles, each responsible for different parts of the Airbnb Clone development. Below is an overview of the key team roles and their responsibilities.
@@ -215,5 +216,34 @@ This keeps all parties informed and enhances communication efficiency within the
 ---
 
 These features work together to deliver a complete Airbnb-style platform where users can list, search, book, review, and securely pay for properties online.
+
+
+## 🛡️ API Security
+
+Ensuring strong API security is vital for protecting user data, maintaining trust, and preventing unauthorized access within the Airbnb Clone project. The following key security measures will be implemented:
+
+### Authentication
+Only verified users can access protected routes and perform actions such as booking, posting, or reviewing properties.  
+We will use **JWT (JSON Web Tokens)** to securely authenticate users and manage sessions across the platform.
+
+### Authorization
+Even after authentication, users will have specific roles and permissions (e.g., admin, host, guest).  
+Role-based access control (RBAC) ensures that each user only accesses features relevant to their role, such as property creation for hosts or booking for guests.
+
+### Data Encryption
+Sensitive data such as passwords and payment details will be encrypted using hashing algorithms like **bcrypt** before storage.  
+This ensures that even if the database is compromised, sensitive information remains unreadable.
+
+### Rate Limiting
+To prevent abuse, the API will include **rate limiting** to control how many requests a user or IP can make within a certain time frame.  
+This helps defend against **Denial-of-Service (DoS)** attacks and brute-force login attempts.
+
+### Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent attacks such as **SQL injection** and **Cross-Site Scripting (XSS)**.  
+This ensures only safe and properly formatted data is processed by the system.
+
+### Secure Payments
+Payment information will be processed through trusted third-party gateways like **Stripe or PayPal**, ensuring compliance with **PCI DSS** security standards.  
+This protects financial data and minimizes the risk of fraud.
 
   
