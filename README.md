@@ -167,4 +167,53 @@ Tracks payment details for completed bookings.
 - **A Payment** is linked to **one Booking** (1-to-1).
 
 These relationships ensure data integrity and make it easy to manage listings, bookings, reviews, and transactions across the platform.
+
+
+## ✨ Feature Breakdown
+
+The Airbnb Clone Project is designed to replicate core functionalities of the Airbnb platform while providing a clean and modern user experience. Below are the key features and how each contributes to the overall project.
+
+### 1. User Management
+This feature allows users to register, log in, and manage their profiles.  
+Hosts can list their properties, while guests can browse and book listings.  
+It ensures secure authentication using JSON Web Tokens (JWT) and provides a personalized experience for each user.
+
+### 2. Property Management
+Hosts can create, update, and delete property listings.  
+Each property includes details such as title, description, images, pricing, and availability.  
+This feature allows hosts to manage their spaces easily and ensures guests can find accurate and detailed listings.
+
+### 3. Booking System
+Guests can book available properties for specific dates.  
+The booking system checks availability, prevents double-booking, and calculates total costs automatically.  
+It ensures a seamless reservation flow from property selection to payment confirmation.
+
+### 4. Search and Filtering
+Users can search for properties by location, price, and availability.  
+Filters help guests narrow down results to find their ideal stay quickly.  
+This enhances user experience by providing fast and relevant search results.
+
+### 5. Reviews and Ratings
+Guests can leave feedback and ratings after completing their stay.  
+These reviews help other users make informed decisions and allow hosts to build trust.  
+It adds transparency and credibility to the platform.
+
+### 6. Payment Integration
+Secure online payments are handled through integrated gateways such as Stripe or PayPal (sandbox mode for testing).  
+This feature ensures that transactions are processed safely and that both guests and hosts can track payment status.  
+It provides the backbone for financial trust within the system.
+
+### 7. Admin Dashboard
+An admin panel for managing users, properties, and bookings.  
+Admins can monitor platform activity, handle disputes, and ensure compliance with community guidelines.  
+This feature helps maintain the quality and safety of the platform.
+
+### 8. Notifications System
+Users receive email or in-app notifications about booking confirmations, cancellations, or property updates.  
+This keeps all parties informed and enhances communication efficiency within the system.
+
+---
+
+These features work together to deliver a complete Airbnb-style platform where users can list, search, book, review, and securely pay for properties online.
+
   
