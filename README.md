@@ -106,4 +106,65 @@ The Airbnb Clone Project uses a modern and scalable technology stack that suppor
 ---
 
 This technology stack ensures the Airbnb Clone Project is efficient, secure, and easy to maintain, while providing users with a seamless booking experience across devices.
+
+
+## 🗃️ Database Design
+
+The database for the Airbnb Clone Project is designed to handle users, property listings, bookings, reviews, and payment transactions efficiently and securely.
+
+### **Key Entities and Their Fields**
+
+#### 1. Users
+Represents people who use the platform — both guests and hosts.
+- `id`: Unique identifier for each user.
+- `name`: Full name of the user.
+- `email`: User’s email address (unique).
+- `password_hash`: Encrypted password for authentication.
+- `role`: Defines if the user is a “guest” or a “host”.
+
+#### 2. Properties
+Represents homes or apartments listed by hosts for rent.
+- `id`: Unique property identifier.
+- `title`: Name or short description of the property.
+- `description`: Detailed overview of the property.
+- `price_per_night`: Cost of booking per night.
+- `host_id`: References the `Users` table (the owner/host of the property).
+
+#### 3. Bookings
+Stores information about user reservations.
+- `id`: Unique booking identifier.
+- `user_id`: References the `Users` table (the guest making the booking).
+- `property_id`: References the `Properties` table.
+- `check_in_date`: Start date of the stay.
+- `check_out_date`: End date of the stay.
+- `status`: Booking status (e.g., pending, confirmed, cancelled).
+
+#### 4. Reviews
+Captures user feedback on properties.
+- `id`: Unique review identifier.
+- `property_id`: References the `Properties` table.
+- `user_id`: References the `Users` table (the reviewer).
+- `rating`: Rating score (e.g., 1–5 stars).
+- `comment`: User’s written feedback.
+
+#### 5. Payments
+Tracks payment details for completed bookings.
+- `id`: Unique payment identifier.
+- `booking_id`: References the `Bookings` table.
+- `amount`: Total payment amount.
+- `payment_method`: Payment option (e.g., card, PayPal).
+- `payment_status`: Indicates if the payment is successful, pending, or failed.
+
+---
+
+### **Entity Relationships**
+
+- **A User** can list **multiple Properties** (1-to-many).  
+- **A User** can make **multiple Bookings** (1-to-many).  
+- **A Property** can have **many Bookings** (1-to-many).  
+- **A Booking** belongs to **one Property** and **one User**.  
+- **A Property** can have **multiple Reviews** (1-to-many).  
+- **A Payment** is linked to **one Booking** (1-to-1).
+
+These relationships ensure data integrity and make it easy to manage listings, bookings, reviews, and transactions across the platform.
   
