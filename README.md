@@ -246,4 +246,26 @@ This ensures only safe and properly formatted data is processed by the system.
 Payment information will be processed through trusted third-party gateways like **Stripe or PayPal**, ensuring compliance with **PCI DSS** security standards.  
 This protects financial data and minimizes the risk of fraud.
 
+
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+**CI/CD (Continuous Integration and Continuous Deployment)** is a development practice that automates the process of building, testing, and deploying applications.  
+It ensures that every code change is automatically tested and deployed, reducing errors and speeding up the development workflow.
+
+### Why it’s Important
+Implementing a CI/CD pipeline helps maintain code quality, consistency, and reliability throughout the project lifecycle.  
+It allows developers to:
+- Detect bugs early through automated testing.  
+- Deploy updates faster and more safely.  
+- Maintain a stable and production-ready codebase at all times.  
+
+### Tools Used
+To set up the CI/CD pipeline for this project, the following tools can be used:
+- **GitHub Actions:** Automates workflows such as testing, building, and deployment directly from the GitHub repository.  
+- **Docker:** Containerizes the application to ensure consistency across development and production environments.  
+- **Render / Vercel / Railway:** For automated deployment of the backend and frontend after successful builds and tests.  
+
+Together, these tools streamline the development process, minimize human error, and enable continuous delivery of new features to users.
+
   
